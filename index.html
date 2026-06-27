@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEXORA - Smart Tech Store</title>
+    <meta name="description" content="A static brand independent store homepage with hero slider, categories, and best sellers.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="NEXORA home">
+        <span class="brand-mark"></span>
+        <span>NEXORA</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#categories">Categories</a>
+        <a href="#best-seller">Best Seller</a>
+        <a href="#support">Support</a>
+      </nav>
+      <div class="header-actions" aria-label="Store shortcuts">
+        <button class="icon-button" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg>
+        </button>
+        <button class="icon-button" type="button" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"></path><path d="M9 8a3 3 0 0 1 6 0"></path></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Featured brand stories">
+        <div class="slider" data-slider>
+          <article class="slide active" data-slide style="--accent: #16c172;">
+            <img src="assets/hero-1.png" alt="NEXORA audio products on a green studio background">
+            <div class="slide-copy">
+              <p class="eyebrow">New launch</p>
+              <h1>Sound that keeps up with your whole day.</h1>
+              <p>Wireless audio, clean design, and battery life made for work, travel, and play.</p>
+              <a class="primary-link" href="#best-seller">Shop Best Seller</a>
+            </div>
+          </article>
+
+          <article class="slide" data-slide style="--accent: #ffcf3f;">
+            <img src="assets/hero-2.png" alt="NEXORA power accessories and cables on a yellow background">
+            <div class="slide-copy">
+              <p class="eyebrow">Power series</p>
+              <h1>Charge faster. Carry lighter.</h1>
+              <p>Compact power banks, durable cables, and daily charging gear for every device.</p>
+              <a class="primary-link" href="#categories">Explore Power</a>
+            </div>
+          </article>
+
+          <article class="slide" data-slide style="--accent: #55a7ff;">
+            <img src="assets/hero-3.png" alt="NEXORA watch and smart home devices on a blue background">
+            <div class="slide-copy">
+              <p class="eyebrow">Smart life</p>
+              <h1>Useful tech, built into simple routines.</h1>
+              <p>Wearables, lighting, and desk essentials that feel polished without getting complicated.</p>
+              <a class="primary-link" href="#categories">Browse Categories</a>
+            </div>
+          </article>
+
+          <div class="slider-controls">
+            <button class="slider-arrow" type="button" data-prev aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+            </button>
+            <div class="slider-dots" aria-label="Slide selector">
+              <button class="dot active" type="button" data-dot="0" aria-label="Show slide 1"></button>
+              <button class="dot" type="button" data-dot="1" aria-label="Show slide 2"></button>
+              <button class="dot" type="button" data-dot="2" aria-label="Show slide 3"></button>
+            </div>
+            <button class="slider-arrow" type="button" data-next aria-label="Next slide">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section categories-section" id="categories">
+        <div class="section-heading">
+          <p class="eyebrow">Shop by category</p>
+          <h2>Find your everyday tech.</h2>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="#">
+            <img src="assets/category-audio.png" alt="Earbuds and headphones">
+            <span>Audio</span>
+          </a>
+          <a class="category-card" href="#">
+            <img src="assets/category-power.png" alt="Power bank and charger">
+            <span>Power</span>
+          </a>
+          <a class="category-card" href="#">
+            <img src="assets/category-wearables.png" alt="Smart watch">
+            <span>Wearables</span>
+          </a>
+          <a class="category-card" href="#">
+            <img src="assets/category-home.png" alt="Smart home lamp and speaker">
+            <span>Smart Home</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section best-section" id="best-seller">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Best Seller</p>
+            <h2>Popular picks this week.</h2>
+          </div>
+          <a class="text-link" href="#">View all</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="badge">Hot</span>
+            <img src="assets/product-earbuds.png" alt="NEXORA AirBuds Pro earbuds">
+            <div class="product-info">
+              <p class="product-category">Audio</p>
+              <h3>AirBuds Pro</h3>
+              <p class="product-meta">ANC earbuds, 38h playtime</p>
+              <div class="product-bottom">
+                <span>$39.99</span>
+                <button class="mini-button" type="button" aria-label="Add AirBuds Pro to bag">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">New</span>
+            <img src="assets/product-watch.png" alt="NEXORA Fit Watch">
+            <div class="product-info">
+              <p class="product-category">Wearables</p>
+              <h3>Fit Watch S2</h3>
+              <p class="product-meta">AMOLED display, health tracking</p>
+              <div class="product-bottom">
+                <span>$54.99</span>
+                <button class="mini-button" type="button" aria-label="Add Fit Watch S2 to bag">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">-20%</span>
+            <img src="assets/product-powerbank.png" alt="NEXORA Pocket Power 20K power bank">
+            <div class="product-info">
+              <p class="product-category">Power</p>
+              <h3>Pocket Power 20K</h3>
+              <p class="product-meta">22.5W fast charge, dual USB-C</p>
+              <div class="product-bottom">
+                <span>$29.99</span>
+                <button class="mini-button" type="button" aria-label="Add Pocket Power 20K to bag">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">Top</span>
+            <img src="assets/product-speaker.png" alt="NEXORA Mini Beam speaker">
+            <div class="product-info">
+              <p class="product-category">Smart Home</p>
+              <h3>Mini Beam Speaker</h3>
+              <p class="product-meta">Portable light speaker, IPX5</p>
+              <div class="product-bottom">
+                <span>$44.99</span>
+                <button class="mini-button" type="button" aria-label="Add Mini Beam Speaker to bag">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="service-strip" id="support" aria-label="Store benefits">
+        <div>
+          <strong>Free delivery</strong>
+          <span>On orders over $49</span>
+        </div>
+        <div>
+          <strong>1-year warranty</strong>
+          <span>Official brand support</span>
+        </div>
+        <div>
+          <strong>Secure checkout</strong>
+          <span>Static demo layout only</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>NEXORA</span>
+      <p>Static brand homepage demo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
